@@ -1,18 +1,18 @@
-Запуск проекта
+### Запуск проекта
 
-git clone git@github.com:LEON2517/react.git
-cd react
-npm i
-cd simple_api
-npm i
-cd ..
-npm run start-server
-npm run dev
+# git clone git@github.com:LEON2517/react.git
+# cd react
+# npm i
+# cd simple_api
+# npm i
+# cd ..
+# npm run start-server
+# npm run dev
 
-git branch -a
-git checkout feature/restaurant
+# git branch -a
+# git checkout feature/restaurant
 
-Задание
+### Задание
 
 1. Написать запрос за ресторанами (ветка feature/restaurant)
    1.1 Написать запрос в createAsyncThunk
@@ -31,12 +31,10 @@ git checkout feature/restaurant
 
 3 Написать логику оптимизации запроса
 
-// в фанках  (ветка feature/query_optimization)
-3. Написать логику оптимизации запроса
+3. Написать логику оптимизации запроса (ветка feature/query_optimization)
    3.1 Если данные были загружены второй раз их не загружаем
-
-// в слайсах (ветка feature/merge_optimization)
-3.2 Данные и id мержились, а не перезаписывались
+   
+3.2 Данные и id мержились, а не перезаписывались (ветка feature/merge_optimization)
 3.3 id не дублировались, если есть повторения
 
 4 Переписать код с JS на TS
