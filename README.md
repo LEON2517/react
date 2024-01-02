@@ -1,16 +1,16 @@
 ### Запуск проекта
 
-# git clone git@github.com:LEON2517/react.git
-# cd react
-# npm i
-# cd simple_api
-# npm i
-# cd ..
-# npm run start-server
-# npm run dev
+* git clone git@github.com:LEON2517/react.git
+* cd react
+* npm i
+* cd simple_api
+* npm i
+* cd ..
+* npm run start-server
+* npm run dev
 
-# git branch -a
-# git checkout feature/restaurant
+* git branch -a
+* git checkout feature/restaurant
 
 ### Задание
 
