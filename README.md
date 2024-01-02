@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+Запуск проекта
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+git clone git@github.com:LEON2517/react.git
+cd react
+npm i
+cd simple_api
+npm i
+cd ..
+npm run start-server
+npm run dev
 
-Currently, two official plugins are available:
+git branch -a
+git checkout feature/restaurant
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Задание
 
-## Expanding the ESLint configuration
+1. Написать запрос за ресторанами (ветка feature/restaurant)
+   1.1 Написать запрос в createAsyncThunk
+   1.2 Сохранить данные в store, написать createSlice
+   1.3 Сделайте запрос за данными ресторана
+   
+РЕЗУЛЬТАТ: Отображаются табы с названием ресторанов, получаем id ресторана по клику на таб
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Написать запрос за блюдами (ветка feature/dish)
+   2.1 Написать запрос в createAsyncThunk
+   2.2 Написать обработку запроса в слайсе dishSlice
+   2.3 Сделать запрос за данными блюд по id ресторана
+   *2.4 Добавить лоадер
 
-- Configure the top-level `parserOptions` property like this:
+РЕЗУЛЬТАТ: По клику на таб отображается список блюд для выбранного ресторана
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3 Написать логику оптимизации запроса
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+// в фанках  (ветка feature/query_optimization)
+3. Написать логику оптимизации запроса
+   3.1 Если данные были загружены второй раз их не загружаем
+
+// в слайсах (ветка feature/merge_optimization)
+3.2 Данные и id мержились, а не перезаписывались
+3.3 id не дублировались, если есть повторения
+
+4 Переписать код с JS на TS
